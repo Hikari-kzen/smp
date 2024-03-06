@@ -1,0 +1,140 @@
+<!Doctype HTML>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="#style">
+	<title>QUIZ</title>
+	<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="heading"><h1 id="text">WELCOME TO PYTHON QUIZ!<h1></div>
+			<div id="quiz">
+				<div id="question"></div>
+				<label class="option"><input type="radio" name="option" value="1" /><span id="option1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2" /><span id="option2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3" /><span id="option3"></span></label>
+				<label class="option"><input type="radio" name="option" value="4" /><span id="option4"></span></label>
+				<button id="next" onclick="nextques();">NEXT</button>
+			</div>
+			<div id="result" style="display:none">
+			</div>
+			<button id="quit" onclick="quit();">Quit</button>
+			<script type="text/javascript" src="pyQuiz_questions.js"></script>
+	<script type="text/javascript" src="pyQuiz.js"></script>
+    
+	
+</body>
+<style>
+    body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+ 	background-repeat: no-repeat;
+    background-size: 1600px 800px   
+}
+#heading
+{       position: absolute;
+	    left:10%;
+    	width: 1000px;
+		background: rgba(255,255,255,0.5);
+		padding: 20px;
+		border: 3px solid #076948;
+		box-shadow: 0 0 8px 3px #fff;
+}
+#text
+{
+	 text-align: center;
+}
+#quiz
+{
+	    height: 350px;
+    	width: 60%;
+    	position: absolute;
+    	left:20%;
+    	top: 30%;
+    	transform: translateX(-50) translateY(-50);
+		background: rgba(255,255,255,0.5);
+		padding: 20px;
+		border: 2px solid#076948;
+		box-shadow: 0 0 8px 3px #fff;
+	
+}
+#question
+{
+   padding: 20px;
+   font-size: 22px;
+   background: #076948;
+   border-radius: 10px;
+   margin: 10px 0 10px 0;
+   color: #f6f6f6;
+}
+.option{
+	width: 470px;
+	display: inline-block;
+	padding: 10px 0 10px 0;
+	background: rgba(255,255,255,0.5);
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	 border: 2px solid #008CBA; 
+	border-radius: 5px;
+}
+
+.option:hover{
+	background: #076948;
+	color: #f6f6f6;	
+}
+#next
+{
+	font-family:  Arial, Helvetica, sans-serif;
+	background-color: white;
+	width:10%;
+	height: 4%px;
+	border: 1px solid #0c0c88;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	cursor: pointer;;
+	float: right;
+	 padding: 10px 10px;
+	
+}
+#next:hover{
+	background-color:rgb(106, 90, 205)
+}
+#quit
+{
+	position: absolute;
+	 right:    0;
+    bottom:   0;
+    font-family: 'Macondo', cursive; 
+	background-color: #e92d14;
+
+	 border: 1px solid #076948;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	 cursor: pointer;
+	 float: right;
+	 padding: 5px 5px;
+	
+}
+#quit:hover{
+		background-color:rgb(106, 90, 205)
+}
+#result
+{
+	font-size:90px;
+	 text-align: center;
+    	 height: 100px;
+    	width: 60%;
+    	position: absolute;
+    	left:20%;
+    	top: 30%;
+    	transform: translateX(-50) translateY(-50);
+		background: rgba(255,255,255,0.5);
+		padding: 20px;
+		border: 1px solid #076948;
+		box-shadow: 0 0 8px 3px #fff;
+}
+
+</style>
+</html>
